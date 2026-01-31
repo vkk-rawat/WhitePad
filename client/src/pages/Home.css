@@ -1,0 +1,218 @@
+.home-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+    color: white;
+}
+
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.home-logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.home-nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.user-greeting {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    border: none;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.home-main {
+    flex: 1;
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.hero-section {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.hero-section h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, #fff, #a5b4fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-section p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.action-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-bottom: 60px;
+}
+
+.action-card {
+    background: linear-gradient(145deg, #1e1e2e 0%, #252542 100%);
+    border-radius: 16px;
+    padding: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.action-card h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.action-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.action-card input {
+    padding: 14px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-size: 15px;
+}
+
+.action-card input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.action-card input:focus {
+    outline: none;
+    border-color: #6366f1;
+}
+
+.home-error {
+    background: rgba(239, 68, 68, 0.15);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    color: #f87171;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.sessions-section h3 {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.sessions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+}
+
+.session-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: background 0.2s;
+}
+
+.session-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.session-info h4 {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.session-info p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.session-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-small {
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    background: rgba(99, 102, 241, 0.2);
+    color: #a5b4fc;
+    transition: all 0.2s;
+}
+
+.btn-small:hover {
+    background: rgba(99, 102, 241, 0.4);
+}
+
+.btn-small.danger {
+    background: rgba(239, 68, 68, 0.2);
+    color: #f87171;
+}
+
+.btn-small.danger:hover {
+    background: rgba(239, 68, 68, 0.4);
+}
+
+.home-footer {
+    text-align: center;
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 13px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
